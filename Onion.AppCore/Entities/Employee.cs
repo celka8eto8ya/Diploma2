@@ -11,6 +11,7 @@ namespace Onion.AppCore.Entities
         public string TechStackName { get; set; }
         // Years Amount 
         public double Experience { get; set; }
+       // Web-developer
         public string Position { get; set; }
         // List hard skills
         public string Technologies { get; set; }
@@ -22,5 +23,7 @@ namespace Onion.AppCore.Entities
         public Department Department { get; set; } // navigation property
         public int TeamId { get; set; } // foreign key
         public Team Team { get; set; } // navigation property
+        public int RoleId { get; set; } // foreign key
+        public Role Role { get; set; } // navigation property
     }
 }
